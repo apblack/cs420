@@ -51,7 +51,7 @@ def parserTest = object {
                     error := message
                 }
             }
-                    
+
             parser.parse("magic word xyzzy")forPlayer(me)
             assert(me.error) shouldBe ("I have no idea what you mean by “magic”.")
         }
@@ -146,20 +146,24 @@ Good Luck!›
                 method moveDirection (dir) { verb := "dir◊"++dir }
                 method look { verb := "◊look" }
             }
-            def obj  = object { 
-                def name is readable = "#red obj" 
+            def obj  = object {
+                inherits alwaysEqual
+                def name is readable = "#red obj"
                 method shortDescription { "red object" }
             }
-            def obj2 = object { 
-                def name is readable = "#blue obj" 
+            def obj2 = object {
+                inherits alwaysEqual
+                def name is readable = "#blue obj"
                 method shortDescription { "blue object" }
             }
-            def obj3 = object { 
-                def name is readable = "#red thing" 
+            def obj3 = object {
+                inherits alwaysEqual
+                def name is readable = "#red thing"
                 method shortDescription { "red thing" }
             }
-            def obj4 = object { 
-                def name is readable = "#the cat" 
+            def obj4 = object {
+                inherits alwaysEqual
+                def name is readable = "#the cat"
                 method shortDescription { "cat" }
             }
             parser.vocabulary.clear
@@ -201,20 +205,24 @@ Good Luck!›
                 method moveDirection (dir) { verb := "dir◊"++dir }
                 method look { verb := "◊look" }
             }
-            def obj  = object { 
-                def name is readable = "#red obj" 
+            def obj  = object {
+                inherits alwaysEqual
+                def name is readable = "#red obj"
                 method shortDescription { "red object" }
             }
-            def obj2 = object { 
-                def name is readable = "#blue obj" 
+            def obj2 = object {
+                inherits alwaysEqual
+                def name is readable = "#blue obj"
                 method shortDescription { "blue object" }
             }
-            def obj3 = object { 
-                def name is readable = "#red thing" 
+            def obj3 = object {
+                inherits alwaysEqual
+                def name is readable = "#red thing"
                 method shortDescription { "red thing" }
             }
-            def obj4 = object { 
-                def name is readable = "#the cat" 
+            def obj4 = object {
+                inherits alwaysEqual
+                def name is readable = "#the cat"
                 method shortDescription { "cat" }
             }
             parser.vocabulary.clear
@@ -251,26 +259,30 @@ Good Luck!›
                 method takeAction (verb') { verb := verb' }
                 method takeAction (verb') on (dobj) { verb := "VO◊"++verb'++"◊"++(dobj.name) }
                 method takeAction (verb') indirect (prep) with (iobj) { verb := "VPO◊"++verb'++"◊"++prep++"◊"++(iobj.name) }
-                method takeAction (verb') on (dobj) indirect (prep) with (iobj) { 
-                    verb := "VOPO◊"++verb'++"◊"++(dobj.name)++"◊"++prep++"◊"++(iobj.name) 
+                method takeAction (verb') on (dobj) indirect (prep) with (iobj) {
+                    verb := "VOPO◊"++verb'++"◊"++(dobj.name)++"◊"++prep++"◊"++(iobj.name)
                 }
                 method moveDirection (dir) { verb := "dir◊"++dir }
                 method look { verb := "◊look" }
             }
-            def obj  = object { 
-                def name is readable = "#red obj" 
+            def obj  = object {
+                inherits alwaysEqual
+                def name is readable = "#red obj"
                 method shortDescription { "red object" }
             }
-            def obj2 = object { 
-                def name is readable = "#blue obj" 
+            def obj2 = object {
+                inherits alwaysEqual
+                def name is readable = "#blue obj"
                 method shortDescription { "blue object" }
             }
-            def obj3 = object { 
-                def name is readable = "#red thing" 
+            def obj3 = object {
+                inherits alwaysEqual
+                def name is readable = "#red thing"
                 method shortDescription { "red thing" }
             }
-            def obj4 = object { 
-                def name is readable = "#the cat" 
+            def obj4 = object {
+                inherits alwaysEqual
+                def name is readable = "#the cat"
                 method shortDescription { "cat" }
             }
             parser.vocabulary.clear
@@ -307,26 +319,30 @@ Good Luck!›
                 method takeAction (verb') { verb := verb' }
                 method takeAction (verb') on (dobj) { verb := "VO◊"++verb'++"◊"++(dobj.name) }
                 method takeAction (verb') indirect (prep) with (iobj) { verb := "VPO◊"++verb'++"◊"++prep++"◊"++(iobj.name) }
-                method takeAction (verb') on (dobj) indirect (prep) with (iobj) { 
-                    verb := "VOPO◊"++verb'++"◊"++(dobj.name)++"◊"++prep++"◊"++(iobj.name) 
+                method takeAction (verb') on (dobj) indirect (prep) with (iobj) {
+                    verb := "VOPO◊"++verb'++"◊"++(dobj.name)++"◊"++prep++"◊"++(iobj.name)
                 }
                 method moveDirection (dir) { verb := "dir◊"++dir }
                 method look { verb := "◊look" }
             }
-            def obj  = object { 
-                def name is readable = "#red obj" 
+            def obj  = object {
+                inherits alwaysEqual
+                def name is readable = "#red obj"
                 method shortDescription { "red object" }
             }
-            def obj2 = object { 
-                def name is readable = "#blue obj" 
+            def obj2 = object {
+                inherits alwaysEqual
+                def name is readable = "#blue obj"
                 method shortDescription { "blue object" }
             }
-            def obj3 = object { 
-                def name is readable = "#red thing" 
+            def obj3 = object {
+                inherits alwaysEqual
+                def name is readable = "#red thing"
                 method shortDescription { "red thing" }
             }
-            def obj4 = object { 
-                def name is readable = "#the cat" 
+            def obj4 = object {
+                inherits alwaysEqual
+                def name is readable = "#the cat"
                 method shortDescription { "cat" }
             }
             parser.vocabulary.clear
